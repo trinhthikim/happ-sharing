@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+body {
+    background-color: #fcf4eb;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+
+}
+@font-face {
+    font-family: MazzardH;
+    src: url(../font/MazzardH-ExtraBold.otf);
+}
+.slide-show-container{
+    width: 100%;
+    position: relative;
+}
+.item-slide {
+    display: none;
+    -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.item-slide img{
+    width: 100%;
+    height: 450px;
+    border: 2px rgb(153, 206, 30) solid;
+}
+.active {
+    display: block;
+}
+.list-dot {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 20px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+}
+.dot:hover {
+    background-color: #717171;
+}
+.dot-active {
+    background-color: #717171;
+}
+@-webkit-keyframes fade {
+    from {opacity: .5} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5} 
+    to {opacity: 1}
+  }
+.list-category {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px 30px 50px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #fff;
+
+}
+.icon-category {
+    width: 180px;
+    height: 170px;
+    
+    text-align: center;
+}
+.happy {
+    position: absolute;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-category .happy img{
+    width: 44px;
+    height: 86px;
+}
+.icon-category img {
+    width: 100px;
+    height: 95px;
+}
+.icon-category .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+.icon-category .title-hover {
+    color: #FFC222;
+}
+.item-category-circle{
+    width: 190px;
+    height: 190px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,
+              rgba(0,0,0,1)), url(../img/category_1.jpg);
+    position: relative;
+    justify-content: center;
+    
+}
+.item-category .name {
+    margin: 20px;
+    width: 150px;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    font-size: 20px;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.list-horizontal{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 50px 30px 70px 30px;
+    padding: 50px 50px;
+}
+.title-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-horizontal{
+    color: #0a472e;
+    font-size: 30px;
+    font-family: MazzardH;
+}
+.see-all {
+    font-size: 14px;
+}
+.button-see-all {
+    border: none;
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    color: #fff;
+    background-color: #00A149;
+    border-radius: 8px;
+    line-height: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.list-merchant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+.item-merchant {
+    position: relative;
+    width: 260px;
+    border: 1px rgb(177, 187, 41) solid;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.item-merchant .item-avatar img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.item-avatar .heart {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: #00A149;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+.item-avatar .heart img {
+    
+    width: 24px;
+    height: 24px;
+}
+.item-merchant .title {
+    padding: 20px 10px;
+}
+.name-merchant {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.address-merchant {
+    color: #4e4e4e;
+    width: 100%;
+    height: 30px;
+}
+.time {
+    margin-top: 10px;
+}
+.see-more {
+    color: rgb(21, 182, 56);
+    font-size: 14px;
+    border-radius: 10px;
+    line-height: 40px;
+}
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star img{
+    width: 20px;
+    height: 20px;
+
+}
+hr {
+    margin: 30px 0;
+    border-top: 1px #000 solid;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-banner {
+    width: 400px;
+    height: 250px;
+    background-color: #00A149;
+    margin: 30px;
+    padding: 35px 30px 30px 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.item-banner-1, .item-banner-3 {
+    background-color: #fff;
+    
+}
+.left {
+    left: 0;
+}
+.title-big {
+    color: #1e1d23;
+    font-size: 26px;
+    font-weight: 900;
+}
+.title-small {
+    color: #FFC222;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.right{
+    right: 0;
+    width: 53%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.right:hover {
+    transform: scale(1.2);
+}
+.right .banner-1 {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+.merchants {
+    background-color: #fff;
+    padding: 100px;
+}
+.merchants .title-popular {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.btn-see-more {
+    width: 200px;
+    height: 50px;
+    background-color: #00A149;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px #FFC222 solid;
+    margin: auto;
+    text-align: center;
+}
